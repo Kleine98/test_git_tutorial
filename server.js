@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 
 // Route handling for the /user endpoint
 app.get("/user", (req, res) => {
-  res.json({ message: "This is the user endpoint" });
+  res.json({ message: "This is the user API endpoint" });
 });
 
 // Start the server
