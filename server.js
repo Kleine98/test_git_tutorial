@@ -7,12 +7,12 @@ app.use(express.json());
 
 // Route handling for the root URL
 app.get("/", (req, res) => {
-  res.send("Branch 1"); // Changed response from "Hello World" to "Branch 1"
+  res.send("Branch 2"); // Changed response from "Hello World" to "Branch 2"
 });
 
-// Route handling for a custom endpoint
-app.get("/custom", (req, res) => {
-  res.json({ message: "This is a custom endpoint" });
+// Route handling for the /user endpoint
+app.get("/user", (req, res) => {
+  res.json({ message: "This is the user endpoint" });
 });
 
 // Start the server
