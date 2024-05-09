@@ -1,13 +1,18 @@
 const express = require("express");
 const app = express();
-const port = 5000; // Change port from 3000 to 5000
+const port = 5000; // Changed port from 3000 to 5000
 
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Route handling
+// Route handling for the root URL
 app.get("/", (req, res) => {
-  res.send("Branch 2"); // Change from Hello World to Branch 2
+  res.send("Branch 1"); // Changed response from "Hello World" to "Branch 1"
+});
+
+// Route handling for a custom endpoint
+app.get("/custom", (req, res) => {
+  res.json({ message: "This is a custom endpoint" });
 });
 
 // Start the server
