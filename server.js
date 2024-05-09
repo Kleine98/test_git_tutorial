@@ -7,7 +7,7 @@ app.use(express.json());
 
 // Route handling
 app.get("/", (req, res) => {
-  res.send("Branch 1"); // Change from Hello World to Branch 1
+  res.send("Branch 2"); // Change from Hello World to Branch 2
 });
 
 // Start the server
